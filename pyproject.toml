@@ -1,0 +1,29 @@
+[project]
+name = "risk-assessment-agent"
+version = "0.1.0"
+description = "Risk Assessment & Governance Agent using LangChain create_agent with SQL + search tools, traced to LangSmith"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.0,<2.0",
+    "langchain-core>=1.0,<2.0",
+    "langchain-google-genai>=2.1.0",
+    "langchain-anthropic>=0.3.0",
+    "langchain-openai>=0.3.0",
+    "langchain-google-vertexai>=3.2.0",
+    "langchain-community>=0.3.0,<0.4.0",
+    "langchain-tavily",
+    "langgraph>=1.0,<2.0",
+    "langsmith>=0.3.0",
+    "sqlalchemy>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "openevals>=0.1.0",
+]
+
+[tool.setuptools]
+py-modules = ["agent", "tools", "chat", "seed_db", "populate_traces", "eval_dataset", "offline_evals"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

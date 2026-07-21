@@ -1,0 +1,11 @@
+.venv/
+.langgraph_api/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.env
+vertexCred.json
+.DS_Store
+*.db

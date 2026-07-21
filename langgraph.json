@@ -1,0 +1,7 @@
+{
+  "graphs": {
+    "Risk Assessment Agent": "./agent.py:agent"
+  },
+  "env": ".env",
+  "dependencies": ["."]
+}
